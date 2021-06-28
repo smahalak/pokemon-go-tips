@@ -1,32 +1,37 @@
-import home1 from "../img/home1.png";
+import logo from "../img/logo.jpg";
+import { About, Image, Description } from "../styles";
 
 const AboutSection = () => {
   return (
-    <div>
-      <div className="description">
+    <About>
+      <Description>
         <div className="title">
           <div className="hide">
-            <h2>We work to make</h2>
+            <h2>Pokémon Go is </h2>
           </div>
           <div className="hide">
             <h2>
-              your <span>dreams</span> come
+              <span>Free</span> to play,
             </h2>
           </div>
           <div className="hide">
-            <h2>true.</h2>
+            <h2>With loads of Pokémon to discover!</h2>
           </div>
         </div>
-        <p>
-          Contact us for any photography or videography ideas that you have. We
-          have professionals with amazing skills.
-        </p>
-        <button>Contact Us</button>
-      </div>
-      <div className="image">
-        <img src={home1} alt="guy with camera" />
-      </div>
-    </div>
+        <p>These tips and tricks will range from beginner to expert level.</p>
+        <button>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=en&gl=us"
+            target="_blank"
+          >
+            Download Link
+          </a>
+        </button>
+      </Description>
+      <Image className="image">
+        <img src={logo} alt="Pokemon Go" />
+      </Image>
+    </About>
   );
 };
 
