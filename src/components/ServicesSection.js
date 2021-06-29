@@ -2,7 +2,7 @@ import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
-import detroit from "../img/detroit.png";
+import phone from "../img/phone.jpg";
 import { About, Description, Image } from "../styles";
 import styled from "styled-components";
 
@@ -45,7 +45,7 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <img alt="cathing pokemon in Detroit" src={detroit} />
+        <img alt="download screen" src={phone} />
       </Image>
     </div>
   );

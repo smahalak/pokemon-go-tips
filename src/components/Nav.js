@@ -30,7 +30,7 @@ const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #130101;
+  background: #e71027;
   position: sticky;
   top: 0;
   z-index: 5;
