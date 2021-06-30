@@ -1,35 +1,33 @@
 import logo from "../img/logo.jpg";
-import { About, Image, Description } from "../styles";
+import { About, Image, Description, Hide } from "../styles";
+import { motion } from "framer-motion";
+import { titleAnimation, fade, photoAnimation } from "../animation";
 
 const AboutSection = () => {
   return (
     <About>
       <Description>
-        <div className="title">
-          <div className="hide">
-            <h2>Pokémon Go is </h2>
-          </div>
-          <div className="hide">
-            <h2>
+        <motion.div className="title">
+          <Hide>
+            <motion.h2 variants={titleAnimation}>Pokémon Go is </motion.h2>
+          </Hide>
+          <Hide>
+            <motion.h2 variants={titleAnimation}>
               <span>Free</span> to play,
-            </h2>
-          </div>
-          <div className="hide">
-            <h2>With loads of Pokémon to discover!</h2>
-          </div>
-        </div>
-        <p>These tips and tricks will range from beginner to expert level.</p>
-        <button>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=en&gl=us"
-            target="_blank"
-          >
-            Download Link
-          </a>
-        </button>
+            </motion.h2>
+          </Hide>
+          <Hide>
+            <motion.h2 variants={titleAnimation}>
+              With loads of Pokémon to discover!
+            </motion.h2>
+          </Hide>
+        </motion.div>
+        <motion.p variants={fade}>
+          These tips and tricks will range from beginner to expert level.
+        </motion.p>
       </Description>
       <Image className="image">
-        <img src={logo} alt="Pokemon Go" />
+        <motion.img variants={photoAnimation} src={logo} alt="Pokemon Go" />
       </Image>
     </About>
   );

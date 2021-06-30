@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 //styled components
 export const About = styled.div`
-  min-height: 90vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 10rem;
+  padding: 3rem 10rem;
 `;
 
 export const Description = styled.div`
@@ -23,4 +23,8 @@ export const Image = styled.div`
     object-fit: cover;
     border-radius: 2%;
   }
+`;
+
+export const Hide = styled.div`
+  overflow: hidden;
 `;
