@@ -59,11 +59,11 @@ export const lineAnimation = {
 };
 
 export const slider = {
-  hidden: { x: "-130%" },
+  hidden: { y: "-150%" },
   show: {
-    x: "100%",
+    y: "100%",
 
-    transition: { ease: "easeOut", duration: 3 },
+    transition: { ease: "easeOut", duration: 2 },
   },
 };
 
@@ -72,11 +72,11 @@ export const slider2 = {
   show: {
     y: "100%",
 
-    transition: { ease: "easeOut", duration: 3 },
+    transition: { ease: "easeOut", duration: 0.25 },
   },
 };
 
 export const sliderContainer = {
   hidden: { opacity: 1 },
-  show: { opacity: 1, transition: { staggerChildren: 1.5, ease: "easeOut" } },
+  show: { opacity: 1, transition: { staggerChildren: 0.5, ease: "easeOut" } },
 };

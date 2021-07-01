@@ -24,6 +24,11 @@ h2{
         font-weight: lighter;
         font-size: 4rem;
     }
+    h4{
+        font-weight: bold;
+        font-size: 2rem;
+       
+    }
 
 
 a{

@@ -24,9 +24,9 @@ const Tips = () => {
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
-        <Frame2 variants={slider2}></Frame2>
+        {/* <Frame2 variants={slider2}></Frame2>
         <Frame3 variants={slider}></Frame3>
-        <Frame4 variants={slider2}></Frame4>
+        <Frame4 variants={slider2}></Frame4> */}
       </motion.div>
 
       <StyledSkill>
