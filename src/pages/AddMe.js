@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import { Image } from "../styles";
+import qr from "../img/qr.jpg";
+import referral_code from "../img/referral_code.jpg";
+import trainercode from "../img/trainercode.jpg";
+
 const AddMe = () => {
   return (
     <motion.div
@@ -17,6 +22,7 @@ const AddMe = () => {
           Download Link
         </a>
       </button>
+      <img src={trainercode} alt="pokemon yo" />
     </motion.div>
   );
 };
