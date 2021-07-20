@@ -18,6 +18,7 @@ html{
 body {
     background-color: black;
     font-family: Pokemon, sans-serif;
+    overflow-x: hidden;
 }
 
 h2{

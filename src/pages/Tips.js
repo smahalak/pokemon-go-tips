@@ -14,7 +14,12 @@ import {
   sliderContainer,
 } from "../animation";
 
+import { useScroll } from "../components/useScroll";
+
 const Tips = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
+
   return (
     <StyledTips
       variants={pageAnimation}
@@ -42,14 +47,24 @@ const Tips = () => {
           </Hide>
         </Link>
       </StyledSkill>
-      <StyledSkill>
+      <StyledSkill
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+      >
         <motion.h2 variants={fade}>Intermediate</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/tips/intermediate">
           <img src={intermediate} alt="pokemon in field" />
         </Link>
       </StyledSkill>
-      <StyledSkill>
+      <StyledSkill
+        ref={element2}
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+      >
         <motion.h2 variants={fade}>Expert</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/tips/expert">
@@ -69,7 +84,7 @@ const StyledTips = styled(motion.div)`
   }
 `;
 
-const StyledSkill = styled.div`
+const StyledSkill = styled(motion.div)`
   padding-bottom: 5rem;
   .line {
     height: 0.5rem;

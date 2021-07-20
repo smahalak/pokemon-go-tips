@@ -3,10 +3,18 @@ import { About } from "../styles";
 import React from "react";
 import Toggle from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
+import { fade } from "../animation";
+import { useScroll } from "./useScroll";
 
 const FaqSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <StyledFacts>
+    <StyledFacts
+      variants={fade}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+    >
       <h2>
         Some neat <span>FACTS</span>
       </h2>
