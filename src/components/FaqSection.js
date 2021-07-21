@@ -33,31 +33,29 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Another clever fact">
+        <Toggle title="Prevent GO Battle Lag">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Aside from having a strong internet connection</p>
+            <p>Turn off your device's GPS to free up some processing power.</p>
+          </div>
+        </Toggle>
+        <Toggle title="Guranteed XL Candy">
+          <div className="answer">
+            <p>Must be level 40*</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-              quia.
+              Catch a tier 2 evolution to get a 1 guranteed XL and get 2 XL
+              candies for a tier 3. Ex: Charmeleon = 1XL Charizard = 2XL
+              candies.
             </p>
           </div>
         </Toggle>
-        <Toggle title="Yes more facts please">
-          <h4>Different Payment Methods</h4>
+        <Toggle title="Legendary encounters without having to Raid?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>You must first hit rank 20 in GO battle league</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-              quia.
-            </p>
-          </div>
-        </Toggle>
-        <Toggle title="The last clever fact">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-              quia.
+              You must win at least 3/5 battles. After that third win you are
+              then able to have a 1/15 chance of encountering the currently
+              released legendary pokemon.
             </p>
           </div>
         </Toggle>

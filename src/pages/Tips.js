@@ -79,6 +79,9 @@ const StyledTips = styled(motion.div)`
   min-height: 50vh;
   overflow: hidden;
   padding: 1rem 10rem;
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+  }
   h2 {
     padding: 1rem 0;
   }

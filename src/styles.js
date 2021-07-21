@@ -8,11 +8,19 @@ export const About = styled(motion.div)`
   align-items: center;
   justify-content: space-between;
   padding: 3rem 10rem;
+  @media (max-width: 1300px) {
+    display: block;
+    text-align: center;
+    padding: 2rem 2rem;
+  }
 `;
 
 export const Description = styled.div`
   flex: 1;
   padding-right: 5rem;
+  @media (max-width: 1300px) {
+    padding: 0;
+  }
 `;
 
 export const Image = styled.div`
