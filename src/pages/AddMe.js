@@ -44,10 +44,9 @@ const AddMeStyle = styled(motion.div)`
       font-size: 2rem;
     }
     img {
-      object-fit: scale-down;
-      width: 40%;
-    height: 35vh;
+      object-fit:scale-down;
     }
+   
   
   }
 

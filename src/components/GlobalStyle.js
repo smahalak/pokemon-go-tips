@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
 html{
     color: white;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
     @media (max-width: 1700px){
         font-size: 75%;
     }
